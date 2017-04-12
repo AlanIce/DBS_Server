@@ -1,0 +1,82 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>API说明</title>
+</head>
+<body>
+	<h1>API字段说明</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>字段名</th>
+				<th>注释</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>id</td>
+				<td>ID</td>
+			</tr>
+			<tr>
+				<td>title</td>
+				<td>电影</td>
+			</tr>
+			<tr>
+				<td>directors</td>
+				<td>导演</td>
+			</tr>
+			<tr>
+				<td>writers</td>
+				<td>编剧</td>
+			</tr>
+			<tr>
+				<td>casts</td>
+				<td>主演</td>
+			</tr>
+			<tr>
+				<td>genres</td>
+				<td>类型</td>
+			</tr>
+			<tr>
+				<td>countries</td>
+				<td>制片国家/地区</td>
+			</tr>
+			<tr>
+				<td>languages</td>
+				<td>语言</td>
+			</tr>
+			<tr>
+				<td>pubdates</td>
+				<td>上映日期</td>
+			</tr>
+			<tr>
+				<td>durations</td>
+				<td>片长</td>
+			</tr>
+			<tr>
+				<td>aka</td>
+				<td>又名</td>
+			</tr>
+			<tr>
+				<td>summary</td>
+				<td>简介</td>
+			</tr>
+			<tr>
+				<td>rating</td>
+				<td>评分</td>
+			</tr>
+			<tr>
+				<td>rating_count</td>
+				<td>评分人数</td>
+			</tr>
+			<tr>
+				<td>image_url</td>
+				<td>海报链接</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

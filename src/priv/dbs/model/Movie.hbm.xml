@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-11 21:16:57 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="priv.dbs.model.Movie" table="movie" catalog="dbs" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="128">
+                <comment>&#228;&#184;&#173;&#230;&#150;&#135;&#229;&#144;&#141;</comment>
+            </column>
+        </property>
+        <property name="directors" type="string">
+            <column name="directors" length="128">
+                <comment>&#229;&#175;&#188;&#230;&#188;&#148;</comment>
+            </column>
+        </property>
+        <property name="writers" type="string">
+            <column name="writers" length="128">
+                <comment>&#231;&#188;&#150;&#229;&#137;&#167;</comment>
+            </column>
+        </property>
+        <property name="casts" type="string">
+            <column name="casts" length="512">
+                <comment>&#228;&#184;&#187;&#230;&#188;&#148;</comment>
+            </column>
+        </property>
+        <property name="genres" type="string">
+            <column name="genres" length="64">
+                <comment>&#231;&#177;&#187;&#229;&#158;&#139;</comment>
+            </column>
+        </property>
+        <property name="countries" type="string">
+            <column name="countries" length="128">
+                <comment>&#229;&#136;&#182;&#231;&#137;&#135;&#229;&#155;&#189;&#229;&#174;&#182;/&#229;&#156;&#176;&#229;&#140;&#186;</comment>
+            </column>
+        </property>
+        <property name="languages" type="string">
+            <column name="languages" length="128">
+                <comment>&#232;&#175;&#173;&#232;&#168;&#128;</comment>
+            </column>
+        </property>
+        <property name="pubdates" type="string">
+            <column name="pubdates" length="128">
+                <comment>&#228;&#184;&#138;&#230;&#152;&#160;&#230;&#151;&#165;&#230;&#156;&#159;</comment>
+            </column>
+        </property>
+        <property name="durations" type="string">
+            <column name="durations">
+                <comment>&#231;&#137;&#135;&#233;&#149;&#191;</comment>
+            </column>
+        </property>
+        <property name="aka" type="string">
+            <column name="aka">
+                <comment>&#229;&#143;&#136;&#229;&#144;&#141;</comment>
+            </column>
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" length="2048">
+                <comment>&#231;&#174;&#128;&#228;&#187;&#139;</comment>
+            </column>
+        </property>
+        <property name="rating" type="java.lang.Float">
+            <column name="rating" precision="12" scale="0">
+                <comment>&#232;&#175;&#132;&#229;&#136;&#134;</comment>
+            </column>
+        </property>
+        <property name="ratingCount" type="java.lang.Integer">
+            <column name="rating_count">
+                <comment>&#232;&#175;&#132;&#229;&#136;&#134;&#228;&#186;&#186;&#230;&#149;&#176;</comment>
+            </column>
+        </property>
+        <property name="imageUrl" type="string">
+            <column name="image_url" />
+        </property>
+    </class>
+</hibernate-mapping>
